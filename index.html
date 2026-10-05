@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/Portfolio-3</title>
+   <style>
+* {
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: italics;
+  line-height: 2.0;
+  color:black;
+  background-color: whitesmoke;
+}
+header {
+  background-color: midnightblue;
+  padding: 15px 30px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0;
+}
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links a:hover {
+  color: lightblue;
+}
+.hero {
+  background-color: lightskyblue;
+  color: black;
+  padding: 80px 20px;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: whitesmoke;
+}
+.btn {
+  display: inline-block;
+  background-color: darkblue;
+  color: whitesmoke;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+}
+.btn:hover {
+  background-color: lightskyblue;
+}
+.section h2 {
+  font-size: 26px;
+  color: darkmagenta;
+  margin-bottom: 15px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.section p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+.skill-card {
+  background-color: white;
+  border: 1px solid grey;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.contact-form {
+  background-color: whitesmoke;
+  padding: 25px;
+  border: 1px solid red;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid darkslategrey;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: blue;
+  outline: none;
+}
+ .box a {
+      color: blue;
+      margin:20px;
+    }
+    .box a:hover {
+      color: #f5b041;
+    }
+  .box{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    margin:30px;
+  }
+  .box h2 {
+    border-bottom: 2px solid lightskyblue;
+    display: inline-block;
+    padding-bottom: 5px;
+    align-self: flex-start;
+}
+footer {
+  background-color: navy;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+   </style>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Amar dev</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Helloo I am amarnadh <br>
+        How are you buddy!!
+      </h1>
+      <a href="#projects" class="btn">TOUCH IT BRO</a>
+    </div>
+  </section>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+     HELLO EVERYONE SO I AM A STUDENT IS CURRENTLY PURSUING THE COURSE AI & BUSINESS FROM SCALER SCHOOL OF TECHNOLOGY. SO I AM EXPLORING MANY THING LIKE SOFTWARE ENDINEERINGG, AI&ML , QUANTUM COMPUTING , BUSINESS ,ENTREPRENEURSHIP AND MANY MORE. BEFORE CMNG TO CLG I HAVE VERY INTREST IN MATH AND PHYSICS. IN MY SCHOOL DAYS I WAAAS MY SCHOOL CAPTIN AND VICE-CAPTAIN IN 12TH AND 11TH RESPECTIVELY AND I AM A NATIONAL PLAYER IN JUDO, REGIONAL PLAYER IN YOGA AND HANDBALL. OUTSIDE ACADEMICS I AM VERY ACTIVE IN, IN ORGANIZING EVENTS.
+    </p>
+  </section>
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <ul class="skills-list">
+      <li class="skill-card">HTML</li>
+      <li class="skill-card">CSS Box Model & Styling</li>
+      <li class="skill-card">Flexbox & Layout Design</li>
+      <li class="skill-card">Responsive Web Design</li>
+      <li class="skill-card">Java Script </li>
+      <li class="skill-card">Git & GitHub Basics</li>
+      <li class="skill-card">Java programming</li>
+      <li class="skill-card">Python Programming</li>
+      <li class="skill-card">C lanaguage</li>
+      <li class="skill-card">Basic SQL</li>
+    </ul>
+  </section>
+  <section id="contact" class="section">
+    <h2>Get In Touch</h2>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+   <section class="box" id="contact">
+    <h2 id="contact">Contact</h2>
+    <p>Email: <a href="mailto:amarnadh8681@gmail.com">amarnadh8681@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/ch_amarnadh_18?stkn=MTg0aXMxamR5ZmtpNA==" target="_blank">ch_amarnadh_18</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/chinni-amarnadh-1862008mvujad" target="_blank">chinni amarnadh</a></p>
+  </section>
+  <footer>
+    <p>&copy; DONE BY AMARNADH </p>
+  </footer>
+</body>
+</html>
